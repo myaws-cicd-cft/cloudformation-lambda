@@ -2,7 +2,7 @@ pipeline {
     agent any 
     stages {
         stage('Validation') {
-            steps{
+            steps {
                sh "aws cloudformation validate-template --template-body file://cftemplate.json"
                 }
         stage('Submit Stack') {    

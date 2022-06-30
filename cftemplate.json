@@ -14,7 +14,7 @@
           },       
           "Code": {
             "S3Bucket": "mysahiblambdabucket",
-            "S3Key": "hello-world-jenkins-v1-0.zip"
+            "S3Key": "hello-world-jenkins-v1-1.zip"
           },
           "Runtime": "nodejs16.x"  
         }

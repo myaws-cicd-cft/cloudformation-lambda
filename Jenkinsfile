@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Submit Stack') {
             steps {
-              sh "aws cloudformation create-stack --stack-name HelloWorldJenkins --template-body file://cftemplate.json --region 'us-east-1' --capabilities CAPABILITY_NAMED_IAM"
+              sh "aws cloudformation update-stack --stack-name HelloWorldJenkins --template-body file://cftemplate.json --region 'us-east-1' --capabilities CAPABILITY_NAMED_IAM"
             }
         }
     }

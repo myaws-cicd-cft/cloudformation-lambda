@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Validate') {    
             steps {
-              sh "aws cloudformation validate-template --template-body file://cftemplate.json --region 'us-east-1' --capabilities CAPABILITY_NAMED_IAM"
+              sh "aws cloudformation validate-template --template-body file://cftemplate.json --region 'us-east-1'"
               }
           }
         stage('Submit Stack') {    

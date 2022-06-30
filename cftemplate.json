@@ -8,7 +8,7 @@
           "Handler": "lambda/index.handler",
           "Role": {
             "Fn::GetAtt": [
-              "HelloWorldLambdaRole",
+              "HelloWorldJenkinsLambdaRole",
               "Arn"
             ]
           },       
@@ -19,10 +19,10 @@
           "Runtime": "nodejs16.x"  
         }
       },
-      "HelloWorldLambdaRole": {
+      "HelloWorldJenkinsLambdaRole": {
         "Type": "AWS::IAM::Role",
         "Properties": {
-          "RoleName": "HelloWorldLambdaRole",
+          "RoleName": "HelloWorldJenkinsLambdaRole",
           "AssumeRolePolicyDocument": {
             "Version": "2012-10-17",
             "Statement": [{
